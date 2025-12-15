@@ -2,7 +2,7 @@ body {
   font-family: "Arial", "Hiragino Sans", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f6faf7;
   margin: 0;
   padding: 20px;
 }
@@ -12,13 +12,13 @@ body {
   margin: 0 auto;
 
 h1 {
-  border-bottom: 3px solid #4a90e2;
+  border-bottom: 3px solid #2f7d5a;
   padding-bottom: 5px;
 }
 
 h2{
   margin-top: 40px;
-  color: #4a90e2;
+  color: #2f7d5a;
 }
 
 main{
