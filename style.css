@@ -28,11 +28,13 @@ main {
   background-color: #fff;
 }
 
-nav ul li{
+@media screen {
+  nav ul li{
       display: inline-block;
       margin: 0 20px;
 }
   
+}
   
   
   
