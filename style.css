@@ -29,10 +29,13 @@ main {
 }
 
 @media screen {
+  nav ul{
+    justfy-content:center;
+    {
   nav ul li{
       display: inline-block;
       margin: 0 20px;
-}
+    }
   
 }
   
