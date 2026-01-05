@@ -47,7 +47,7 @@ li {
   margin: 10px 0;
 }
 
-.hub-list {
+hub-list {
   display: flex !important;   /* 強制的に横並びにする指示 */
   justify-content: center;    /* 中央寄せ */
   gap: 20px;                  /* 項目間のスキマ */
@@ -56,17 +56,16 @@ li {
   margin: 20px 0;
 }
 
-.hub-list li {
+hub-list li {
   margin: 0 !important;       /* 縦並び用の余白を打ち消す */
 }
 
-.hub-list a {
+hub-list a {
   text-decoration: none;
   border: 1px solid #007bff;
   padding: 8px 16px;
   border-radius: 5px;
   display: inline-block;
-}
 }
   
 }
