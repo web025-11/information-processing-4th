@@ -28,15 +28,24 @@ main {
   background-color: #fff;
 }
 
-@media screen {
-  nav ul{
-    justfy-content:center;
-    {
-  nav ul li{
-      display: inline-block;
-      margin: 0 20px;
-    }
-  
+ul {
+  list-style: none;
+  padding: 0;       
+}
+
+li {
+  margin-bottom: 15px; 
+}
+
+  ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  margin: 10px 0;
+}
 }
   
   
