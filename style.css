@@ -47,41 +47,49 @@ li {
   margin: 10px 0;
 }
 
-/* 【上のハブ項目専用】ボタンのような見た目にする */
+/* --- 1. 上のハブ（メニュー）専用：横並びボタンにする --- */
 .hub-list {
-  display: flex !important;
-  justify-content: center;
-  gap: 20px;
-  list-style: none !important;
+  display: flex !important;   /* 強制的に横並びにする */
+  justify-content: center;    /* 中央に寄せる */
+  gap: 15px;                  /* ボタン同士の隙間 */
+  list-style: none !important;/* 点を消す */
   padding: 0;
   margin: 20px 0;
 }
 
+.hub-list li {
+  margin: 0 !important;       /* 以前の縦用マージンを打ち消す */
+}
+
 .hub-list a {
-  text-decoration: none;
-  border: 1px solid #007bff;
-  padding: 8px 16px;
-  border-radius: 5px;
-  display: inline-block;
-  color: #007bff;
+  text-decoration: none;      /* 下線を消す */
+  color: #007bff;             /* 文字の色 */
+  border: 2px solid #007bff;  /* ボタンの枠線 */
+  padding: 8px 16px;          /* ボタンの内側の余白 */
+  border-radius: 20px;        /* 角を丸くする */
+  display: inline-block;      /* 余白を正しく反映させる */
+  transition: 0.3s;           /* 変化を滑らかに */
 }
 
-/* 【下の対応デバイス専用】ハブとは別の見た目にする */
-.device-list {
-  list-style: disc; /* ポチ（・）を表示させる場合 */
-  padding-left: 20px;
-  margin: 20px 0;
+.hub-list a:hover {
+  background-color: #007bff;  /* マウスを乗せた時に色を塗る */
+  color: #fff;
 }
 
-/* もしデバイスリストも横に並べたいが、ボタンにはしたくない場合 */
-/*
+/* --- 2. 下の対応デバイス専用：縦並びのままにする --- */
 .device-list {
-  display: flex;
-  gap: 15px;
-  list-style: none;
+  list-style: disc;           /* 箇条書きの点（・）を出す */
+  padding-left: 40px;         /* 点を表示するための左側の余白 */
+  text-align: left;           /* 左寄せにする */
+  max-width: fit-content;     /* コンテンツに合わせた幅 */
+  margin: 20px auto;          /* 全体を中央に置く */
 }
-*/
-  
+
+.device-list li {
+  margin-bottom: 8px;         /* 行間を少しあける */
+  text-align: left;           /* 各行を左寄せ */
+}
+
 }
   
   
