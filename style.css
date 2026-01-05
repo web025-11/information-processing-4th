@@ -89,7 +89,12 @@ li {
   margin-bottom: 8px;         /* 行間を少しあける */
   text-align: left;           /* 各行を左寄せ */
 }
-
+img {
+  display: block;      /* 画像をブロック要素に変える */
+  margin-left: auto;   /* 左の余白を自動調整 */
+  margin-right: auto;  /* 右の余白を自動調整 */
+  max-width: 100%;    /* 親要素からはみ出さないように（ついでに設定） */
+}
 }
   
   
