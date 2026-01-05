@@ -47,54 +47,62 @@ li {
   margin: 10px 0;
 }
 
-/* --- 1. 上のハブ（メニュー）専用：横並びボタンにする --- */
 .hub-list {
-  display: flex !important;   /* 強制的に横並びにする */
-  justify-content: center;    /* 中央に寄せる */
-  gap: 15px;                  /* ボタン同士の隙間 */
-  list-style: none !important;/* 点を消す */
+  display: flex !important;   
+  justify-content: center;    
+  gap: 15px;                  
+  list-style: none !important;
   padding: 0;
   margin: 20px 0;
 }
 
 .hub-list li {
-  margin: 0 !important;       /* 以前の縦用マージンを打ち消す */
+  margin: 0 !important;       
 }
 
 .hub-list a {
-  text-decoration: none;      /* 下線を消す */
-  color: #007bff;             /* 文字の色 */
-  border: 2px solid #007bff;  /* ボタンの枠線 */
-  padding: 8px 16px;          /* ボタンの内側の余白 */
-  border-radius: 20px;        /* 角を丸くする */
-  display: inline-block;      /* 余白を正しく反映させる */
-  transition: 0.3s;           /* 変化を滑らかに */
+  text-decoration: none;     
+  color: #007bff;           
+  border: 2px solid #007bff; 
+  padding: 8px 16px;         
+  border-radius: 20px;       
+  display: inline-block;      
+  transition: 0.3s;          
 }
 
 .hub-list a:hover {
-  background-color: #007bff;  /* マウスを乗せた時に色を塗る */
+  background-color: #007bff;  
   color: #fff;
 }
 
-/* --- 2. 下の対応デバイス専用：縦並びのままにする --- */
+
 .device-list {
-  list-style: disc;           /* 箇条書きの点（・）を出す */
-  padding-left: 40px;         /* 点を表示するための左側の余白 */
-  text-align: left;           /* 左寄せにする */
-  max-width: fit-content;     /* コンテンツに合わせた幅 */
-  margin: 20px auto;          /* 全体を中央に置く */
+  list-style: disc;           
+  padding-left: 40px;         
+  text-align: left;           
+  max-width: fit-content;     
+  margin: 20px auto;          
 }
 
 .device-list li {
-  margin-bottom: 8px;         /* 行間を少しあける */
-  text-align: left;           /* 各行を左寄せ */
+  margin-bottom: 8px;         
+  text-align: left;          
 }
 img {
-  display: block;      /* 画像をブロック要素に変える */
-  margin-left: auto;   /* 左の余白を自動調整 */
-  margin-right: auto;  /* 右の余白を自動調整 */
-  max-width: 100%;    /* 親要素からはみ出さないように（ついでに設定） */
+  display: block;     
+  margin-left: auto;  
+  margin-right: auto;  
+  max-width: 100%;   
 }
+.comparison-table td {
+  text-align: center;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
 }
   
   
