@@ -47,26 +47,40 @@ li {
   margin: 10px 0;
 }
 
-hub-list {
-  display: flex !important;   /* 強制的に横並びにする指示 */
-  justify-content: center;    /* 中央寄せ */
-  gap: 20px;                  /* 項目間のスキマ */
-  list-style: none !important;/* 点を消す */
+/* 【上のハブ項目専用】ボタンのような見た目にする */
+.hub-list {
+  display: flex !important;
+  justify-content: center;
+  gap: 20px;
+  list-style: none !important;
   padding: 0;
   margin: 20px 0;
 }
 
-hub-list li {
-  margin: 0 !important;       /* 縦並び用の余白を打ち消す */
-}
-
-hub-list a {
+.hub-list a {
   text-decoration: none;
   border: 1px solid #007bff;
   padding: 8px 16px;
   border-radius: 5px;
   display: inline-block;
+  color: #007bff;
 }
+
+/* 【下の対応デバイス専用】ハブとは別の見た目にする */
+.device-list {
+  list-style: disc; /* ポチ（・）を表示させる場合 */
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+/* もしデバイスリストも横に並べたいが、ボタンにはしたくない場合 */
+/*
+.device-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+*/
   
 }
   
