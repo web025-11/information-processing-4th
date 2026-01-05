@@ -46,7 +46,8 @@ li {
 li {
   margin: 10px 0;
 }
-  nav ul {
+
+nav ul {
   display: flex;
   justify-content: center; 
   gap: 20px;               
