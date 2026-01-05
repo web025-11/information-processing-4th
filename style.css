@@ -47,35 +47,26 @@ li {
   margin: 10px 0;
 }
 
-/* リスト全体の基本設定 */
-ul {
-  list-style: none;
+.hub-list {
+  display: flex !important;   /* 強制的に横並びにする指示 */
+  justify-content: center;    /* 中央寄せ */
+  gap: 20px;                  /* 項目間のスキマ */
+  list-style: none !important;/* 点を消す */
   padding: 0;
-  margin: 0;
-}
-
-/* ナビゲーションを横並びにする指示 */
-nav ul {
-  display: flex;           /* これで横並びになります */
-  justify-content: center; /* 中央寄せ */
-  gap: 20px;               /* 項目間のスキマ */
   margin: 20px 0;
 }
 
-/* リンクをボタンらしく見せる（ハブ機能） */
-nav ul li a {
+.hub-list li {
+  margin: 0 !important;       /* 縦並び用の余白を打ち消す */
+}
+
+.hub-list a {
   text-decoration: none;
-  color: #007bff;
   border: 1px solid #007bff;
   padding: 8px 16px;
   border-radius: 5px;
-  display: inline-block;  /* 余白を正しく反映させる */
+  display: inline-block;
 }
-
-/* マウスを乗せた時の色 */
-nav ul li a:hover {
-  background-color: #007bff;
-  color: #fff;
 }
   
 }
